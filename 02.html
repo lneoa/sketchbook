@@ -1,0 +1,162 @@
+<!-- 
+Note to reader:
+The div class "triad" doesn't make sense for this sketch. With more **** to give I would change the class to "square" :T
+-->
+
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8"> 
+    <title>Interaction Sketchbook</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="This project is...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
+</head>
+
+<style>
+
+body {
+    background-color: black;
+}
+
+.description {
+    color: white;
+}
+
+.description:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    column-count: 6;
+}
+
+.triad{
+    margin: 0px;
+    padding: 0px;
+    width: 120px;
+    height: 120px;
+    border: 2px solid white;
+    border-radius: 0%;
+    transition: 1s;
+}
+
+</style>
+
+<body>
+
+<div class="content">
+
+<div class="row">
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+</div>
+<div class="row">
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+</div>
+<div class="row">
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+</div>
+<div class="row">
+    <div class="triad" id="target" onclick="message()"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+</div>
+<div class="row">
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+</div>
+<div class="row">
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+    <div class="triad"></div>
+</div>
+
+</div> <!-- content end -->
+
+<a class="next" href="03.html">
+<div class="description">
+    <div class="text">
+    <p>
+        Red Dot
+    </p>
+    <p class="small">
+        02 <br>
+        23/5/14
+        <br><br>
+        Move the mouse to find the red dot
+        <br><br>
+    </p>
+    </div>
+</div>
+</a>
+
+
+
+<script>
+
+// Get a reference to the div element
+var divs = document.getElementsByClassName("triad");
+
+// Loop through each div element and add event listeners
+for (var i = 0; i < divs.length; i++) {
+  var div = divs[i];
+  
+  // Add an event listener for when the mouse enters the div
+  div.addEventListener("mouseenter", function() {
+    this.style.borderRadius = "50%";
+  });
+  
+  // Add an event listener for when the mouse leaves the div
+//   div.addEventListener("click", function() {
+//     this.style.borderRadius = "0%";
+//   });
+}
+
+
+var div = document.getElementById("target");
+
+div.addEventListener("mouseenter", function() {
+    this.style.backgroundColor= "red";
+    this.style.cursor="pointer"
+  });
+
+// message alert
+
+function message() {
+    alert("You did it!");
+}
+
+
+</script>
+</body>
+</html>

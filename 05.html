@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8"> 
+    <title>Interaction Sketchbook</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="This project is...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+
+body {
+  background-color: black;
+}
+
+.content {
+  margin: auto;
+  padding: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.description {
+  color: white;
+}
+
+.flash {
+  margin: 0;
+  padding: 0;
+  animation: flash 10s linear 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2, jump-none);
+}
+  
+@keyframes flash {
+  0% {
+    background-color: white;
+  }
+  1.25% {
+    background-color: black;
+  }
+  2.5% {
+    background-color: white;
+  }
+  5% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+#type {
+  padding: 250px 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 6.66em;
+  color:darkgray;
+  mix-blend-mode: multiply;
+  font-weight: 800;
+  letter-spacing: -4px;
+  text-shadow: 0px 0px 8px darkgray;
+}
+
+
+</style>
+
+<body>
+
+<div class="content flash"> <!-- content start -->
+
+<div id="type">
+  <i>Vengance</i>
+</div>
+
+</div> <!-- content end -->
+
+<a class="next" href="01.html">
+<div class="description">
+    <div class="text">
+    <p>
+        Flash
+    </p>
+    <p class="small">
+        05 <br>
+        28/5/14
+        <br><br>
+        10-second looped css keyframe animation (I woke up crying)
+        <br><br>
+    </p>
+    </div>
+</div>
+</a>
+
+
+
+<script>
+
+function createRipple(event) {
+  const rippleContainer = event.currentTarget;
+
+  const circle = document.createElement("span");
+  const diameter = Math.max(rippleContainer.clientWidth, rippleContainer.clientHeight);
+  const radius = diameter / 2;
+
+  circle.style.width = circle.style.height = `${diameter}px`;
+  circle.style.left = `${event.clientX - rippleContainer.offsetLeft - radius}px`;
+  circle.style.top = `${event.clientY - rippleContainer.offsetTop - radius}px`;
+  circle.classList.add("ripple");
+
+  const ripple = rippleContainer.getElementsByClassName("ripple")[0];
+
+  // if (ripple) {
+  //   ripple.remove();
+  // }
+
+  const rippleDiv = document.createElement('div');
+  rippleDiv.classList.add('ripple-div');
+  rippleDiv.appendChild(circle);
+
+  rippleContainer.appendChild(rippleDiv);
+}
+
+const rippleContainers = document.querySelectorAll(".ripple-container");
+for (const container of rippleContainers) {
+  container.addEventListener("click", createRipple);
+}
+
+
+
+
+
+</script>
+</body>
+</html>
