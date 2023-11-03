@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8"> 
+    <title>Interaction Sketchbook</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="This project is...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
+</head>
+
+<style>
+    body {
+        background-color: white;
+    }
+
+    .content {
+        padding: 60px;
+        font-size: 4em;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+ .border {
+        margin: 10px;
+        padding: 0px;
+        width: auto;
+        height: auto;
+        position: relative; /* Add relative positioning */
+        text-align: center;
+        text-decoration-line: overline;
+        text-decoration-style: wavy;
+    }
+
+    /* .border::before,
+    .border::after {
+        content: "";
+        position: absolute;
+        left: 45%; /* Position the line horizontally in the center */
+        top: 0;
+        bottom: 0;
+        width: 0;
+        border-left: 4px dotted black;
+    } */
+
+    .border::before {
+        margin-top: -10px; /* Adjust the line's starting position */
+    }
+
+    .border::after {
+        margin-bottom: -10px; /* Adjust the line's ending position */
+    }
+</style>
+
+<body>
+    <div class="content">
+        <div class="row">
+            <div class="border">LA</div>
+            <div class="border">RIVER</div>
+        </div>
+        <div class="row">
+            <div class="">LA</div>
+            ×
+            <div class="">RIVER</div>
+        </div>
+        <div class="row">
+            <div class="">LA</div>
+            *
+            <div class="">RIVER</div>
+        </div>
+        <div class="row">
+            <div class="">LA</div>
+        </div>
+        <div class="row">
+            <div class="">RIVER</div>
+        </div>
+    </div>
+
+
+<a class="next" href="02.html">
+<div class="description">
+    <div class="text">
+    <p>
+        Shifting River
+    </p>
+    <p class="small">
+        06 <br>
+        6-20-2023
+        <br><br>
+        Description
+        <br><br>
+    </p>
+    </div>
+</div>
+</a>
+
+<a class=github href="https://github.com/lneoa/sketchbook">GITHUB</a>
+
+<script>
+
+
+// var contents_b=new Array()
+    
+//     //1) Specify content(s) to display and rotate (extend as desired)
+//     contents_b[0]='Esteban Arias <br >'
+//     contents_b[1]='Jalen Brooks <br >'
+//     contents_b[2]='Jingyan Chen <br >'
+//     contents_b[3]='David Comer <br >'
+//     contents_b[4]='Tahel Doron <br >'
+//     contents_b[5]='Brandon Fried <br >'
+//     contents_b[6]='Pooja Gandhi <br >'
+//     contents_b[7]='Elise Jennings <br >'
+//     contents_b[8]='Gabrielle Kim <br >'
+//     contents_b[9]='Sangati Kotak <br >'
+//     contents_b[10]='Olivia Pawlowski <br >'
+//     contents_b[11]='Yijie Wang <br >'
+//     contents_b[12]='Sammi Wu <br >'
+
+//     var the_one_b
+//     var y=0
+//     var spacing_b=" "
+    
+//     while (y<contents_b.length){
+//     the_one_b=Math.floor(Math.random()*contents_b.length)
+//     if (contents_b[the_one_b]!="_selected!"){
+//     document.write(contents_b[the_one_b]+spacing_b)
+//     contents_b[the_one_b]="_selected!"
+//     y++
+//     }
+//     }
+
+
+
+
+
+
+// // Get a reference to the div element
+// var divs = document.getElementsByClassName("triad");
+
+// // If the random number is less than 0.5, set the background color to white
+// // Otherwise, set it to black
+// for (var i = 0; i < divs.length; i++) {
+//     var div = divs[i];
+//     var random = Math.random();
+//     if (random < 0.5) {
+//         div.style.backgroundColor = "transparent";
+//     } else {
+//         div.style.backgroundColor = "black";
+//     }
+// }
+</script>
+</body>
+</html>
