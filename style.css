@@ -50,7 +50,28 @@ p {
     text-transform: uppercase;
 }
 
-.description:hover {
+.left {
+    padding: 10px;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    float: left;
+    color: gray;
+    font-family: 'Inconsolata';
+}
+.right {
+    padding: 10px;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    float: right;
+    color: gray;
+    font-family: 'Inconsolata';
+}
+.left:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.right:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 

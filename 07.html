@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8"> 
+    <title>Interaction Sketchbook</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="This project is...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
+</head>
+
+<style>
+body {
+    background-color: white;
+}
+
+.description {
+    background-color: #f4f4f4;
+}
+
+.content {
+    margin: auto;
+    padding-top: 15%;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 75px;
+    letter-spacing: 2px;
+}
+
+.word {
+    margin-bottom: -25px;
+}
+
+.word div {
+    display: inline-block;
+    margin: 0;
+}
+
+.word div:hover {
+    cursor: default;
+}
+
+
+</style>
+
+<body>
+
+<div class="content">
+
+
+    <div class="word">
+        <div class="letter1">c</div><div class="letter2">c</div><div class="letter3">c</div><div class="letter4">c</div><div class="letter5">c</div>
+    </div>
+
+    <div class="word">
+        <div class="letter6">c</div><div class="letter7">c</div><div class="letter8">c</div><div class="letter9">c</div><div class="letter10">c</div>
+    </div>
+
+    <div class="word">
+        <div class="letter11">c</div><div class="letter12">c</div><div class="letter13">c</div><div class="letter14">c</div><div class="letter15">c</div>
+    </div>
+
+    <div class="word">
+        <div class="letter16">c</div><div class="letter17">c</div><div class="letter18">c</div><div class="letter19">c</div><div class="letter20">c</div>
+    </div>
+
+</div>
+
+
+
+
+<div class="description">
+    <div>
+        <a class="right" href="01.html">
+            →
+        </a>
+        <a class="left" href="06.html">
+            ←
+        </a>
+    </div>
+    <br>
+    <br>
+    <div class="text">
+    <p>
+        Scatter II
+    </p>
+    <p class="small">
+        07 <br>
+        12-06-2023
+        <br><br>
+        Letters scatter on hover
+        <br><br>
+    </p>
+    </div>
+</div>
+
+
+<a class=github href="https://github.com/lneoa/sketchbook">GITHUB</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script>
+
+
+var textWrapper = document.querySelector('.letter1');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter1',
+        translateX: function() {
+        return anime.random(0, -200);
+        },
+        translateY: function() {
+        return anime.random(0, -200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter2');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter2',
+        translateX: function() {
+        return anime.random(0, 200);
+        },
+        translateY: function() {
+        return anime.random(0, -200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter3');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter3',
+        translateX: function() {
+        return anime.random(0, 200);
+        },
+        translateY: function() {
+        return anime.random(0, 200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter4');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter4',
+        translateX: function() {
+        return anime.random(0, -200);
+        },
+        translateY: function() {
+        return anime.random(0, 200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter5');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter5',
+        translateX: function() {
+        return anime.random(0, 200);
+        },
+        translateY: function() {
+        return anime.random(0, 200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+// -------------------
+
+var textWrapper = document.querySelector('.letter6');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter6',
+        translateX: function() {
+        return anime.random(0, -200);
+        },
+        translateY: function() {
+        return anime.random(0, -200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter7');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter7',
+        translateX: function() {
+        return anime.random(0, 200);
+        },
+        translateY: function() {
+        return anime.random(0, -200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter8');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter8',
+        translateX: function() {
+        return anime.random(0, 200);
+        },
+        translateY: function() {
+        return anime.random(0, 200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter9');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter9',
+        translateX: function() {
+        return anime.random(0, -200);
+        },
+        translateY: function() {
+        return anime.random(0, 200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter10');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter10',
+        translateX: function() {
+        return anime.random(0, 200);
+        },
+        translateY: function() {
+        return anime.random(0, 200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+// -------------------
+
+// -------------------
+
+var textWrapper = document.querySelector('.letter11');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter11',
+        translateX: function() {
+        return anime.random(0, -200);
+        },
+        translateY: function() {
+        return anime.random(0, -200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter12');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter12',
+        translateX: function() {
+        return anime.random(0, 200);
+        },
+        translateY: function() {
+        return anime.random(0, -200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter13');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter13',
+        translateX: function() {
+        return anime.random(0, 200);
+        },
+        translateY: function() {
+        return anime.random(0, 200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter14');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter14',
+        translateX: function() {
+        return anime.random(0, -200);
+        },
+        translateY: function() {
+        return anime.random(0, 200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter15');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter15',
+        translateX: function() {
+        return anime.random(0, 200);
+        },
+        translateY: function() {
+        return anime.random(0, 200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+// -------------------
+
+// -------------------
+
+var textWrapper = document.querySelector('.letter16');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter16',
+        translateX: function() {
+        return anime.random(0, -200);
+        },
+        translateY: function() {
+        return anime.random(0, -200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter17');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter17',
+        translateX: function() {
+        return anime.random(0, 200);
+        },
+        translateY: function() {
+        return anime.random(0, -200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter18');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter18',
+        translateX: function() {
+        return anime.random(0, 200);
+        },
+        translateY: function() {
+        return anime.random(0, 200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter19');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter19',
+        translateX: function() {
+        return anime.random(0, -200);
+        },
+        translateY: function() {
+        return anime.random(0, 200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+var textWrapper = document.querySelector('.letter20');
+textWrapper.addEventListener("mouseover", function randomValues() {
+    anime({
+        targets: '.letter20',
+        translateX: function() {
+        return anime.random(0, 200);
+        },
+        translateY: function() {
+        return anime.random(0, 200);
+        },
+        scale: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        opacity: function(el, i, l) {
+            return (l - i) + -.5;
+        },
+        easing: 'easeInOutQuad',
+        duration: 800,
+        complete: 0,
+        direction: 'alternate',
+        loop: 1,
+        delay: 100
+    }).add({
+        translateX: 0,
+        translateY: 0,
+        duration: 1000
+    });
+});
+
+// -------------------
+
+
+
+</script>
+</body>
+</html>
