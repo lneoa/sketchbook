@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8"> 
+    <title>Interaction Sketchbook</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="This project is...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
+</head>
+
+<style>
+body {
+    background-color: black;
+    color: white;
+}
+
+.description {
+    color: white;
+}
+
+.content {
+    margin: auto;
+    position: relative;
+}
+
+#egg {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    width: 420px;
+    height: 600px;
+    background-image: linear-gradient(#07ff28 5%, #b1fdda 50%, #07ffcd 95%);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    animation-name: rotate;
+    animation-duration: 30s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+</style>
+
+<body>
+
+<div class="content">
+
+<div id="egg"></div>
+
+<p id="hours"></p>
+
+</div>
+
+
+<div class="description">
+    <div>
+        <a class="right" href="09.html">
+            →
+        </a>
+        <a class="left" href="07.html">
+            ←
+        </a>
+    </div>
+    <br>
+    <br>
+    <div class="text">
+    <p>
+        CSS Screensaver
+    </p>
+    <p class="small">
+        08 <br>
+        12-06-2023
+        <br><br>
+        Egg shape from <a href="https://css-tricks.com/the-shapes-of-css/#aa-egg-shape" target="_blank">CSS Tricks</a>
+        
+        <br><br>
+    </p>
+    </div>
+</div>
+
+<a class="github" href="https://github.com/lneoa/sketchbook">GITHUB</a>
+
+
+<script>
+
+var date = new Date();
+	var current_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
+	document.getElementById("p1").innerHTML = current_time;
+
+const currentDate = new Date();
+    const hours = currentDate.getHours();
+    document.getElementById("hours").innerHTML = "Current Hour (0-23): " + hours;
+
+</script>
+</body>
+</html>
